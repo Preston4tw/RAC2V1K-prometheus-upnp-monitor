@@ -1,0 +1,8 @@
+version: '3'
+services:
+  upnp-wifi-monitor:
+    build:
+        context: .
+    container_name: upnp-wifi-monitor
+    restart: unless-stopped
+    network_mode: host
